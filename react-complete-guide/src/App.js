@@ -13,23 +13,34 @@ const app = props => {
     ],
     otherState: 'some other value'
 });
+const switchNameHandler = () => {
+  //console.log('Was clicked!');
+  // dont do thisthis.state.persons[0].name = "maximilian";
+  setPersonsState({
+    persons: [
+      {name: "Maxeee", age: 28},
+      {name: "manu", age: 28},
+      {name: "Diana", age:31}
+  ]
+});
+};
 
    return (
      <div className = "App">
        <h1>Hi iam ract</h1>
        <p> this is really working</p>
-       <button onClick={this.switchNameHandler}> Switch name</button>
+       <button onClick={switchNameHandler}> Switch name</button>
        <Person 
-          name = {this.state.persons[0].name} 
-          age={this.state.persons[0].age}/>
+          name = {personsState.persons[0].name} 
+          age={personsState.persons[0].age}/>
 
        <Person 
-          name = {this.state.persons[1].name}  
-          age={this.state.persons[1].age}> My Hobbies: racing </Person>
+          name = {personsState.persons[1].name}  
+          age={personsState.persons[1].age}> My Hobbies: racing </Person>
 
        <Person 
-          name = {this.state.persons[2].name}  
-          age={this.state.persons[2].age}/>
+          name = {personsState.persons[2].name}  
+          age={personsState.persons[2].age}/>
        
      </div>
 
@@ -54,11 +65,11 @@ export default app;
 //     otherSate: 'some other value'
 //   }
 
-//   switchNameHandler = () => {
-//     //console.log('Was clicked!');
-//     // dont do thisthis.state.persons[0].name = "maximilian";
-//     this.setState({persons: [
-//       {name: "Maxeee", age: 28},
-//       {name: "manu", age: 28},
-//       {name: "Diana", age:31}
-//     ]})
+  // switchNameHandler = () => {
+  //   //console.log('Was clicked!');
+  //   // dont do thisthis.state.persons[0].name = "maximilian";
+  //   this.setState({persons: [
+  //     {name: "Maxeee", age: 28},
+  //     {name: "manu", age: 28},
+  //     {name: "Diana", age:31}
+  //   ]})
