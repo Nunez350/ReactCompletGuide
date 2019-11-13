@@ -1,3 +1,6 @@
+
+
+
 import React, { useState } from 'react';
 import Person from './Person/Person'
 import './App.css';
@@ -39,7 +42,8 @@ const switchNameHandler = () => {
 
        <Person 
           name = {personsState.persons[1].name}  
-          age={personsState.persons[1].age}> My Hobbies: racing </Person>
+          age={personsState.persons[1].age}
+          click={switchNameHandler}> My Hobbies: racing </Person>
 
        <Person 
           name = {personsState.persons[2].name}  
@@ -58,21 +62,21 @@ const switchNameHandler = () => {
 export default app;
 
 
-// //class App extends Component {
-//   state = {
-//     persons:[
-//       {name: "Max", age:28},
-//       {name: "Manu", age:29},
-//       {name: "Diana", age:30}
-//     ],
-//     otherSate: 'some other value'
-//   }
+// // //class App extends Component {
+// //   state = {
+// //     persons:[
+// //       {name: "Max", age:28},
+// //       {name: "Manu", age:29},
+// //       {name: "Diana", age:30}
+// //     ],
+// //     otherSate: 'some other value'
+// //   }
 
-  // switchNameHandler = () => {
-  //   //console.log('Was clicked!');
-  //   // dont do thisthis.state.persons[0].name = "maximilian";
-  //   this.setState({persons: [
-  //     {name: "Maxeee", age: 28},
-  //     {name: "manu", age: 28},
-  //     {name: "Diana", age:31}
-  //   ]})
+//   // switchNameHandler = () => {
+//   //   //console.log('Was clicked!');
+//   //   // dont do thisthis.state.persons[0].name = "maximilian";
+//   //   this.setState({persons: [
+//   //     {name: "Maxeee", age: 28},
+//   //     {name: "manu", age: 28},
+//   //     {name: "Diana", age:31}
+//   //   ]})
